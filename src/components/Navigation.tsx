@@ -14,7 +14,7 @@ export function Brand({ horizontal = false }: { horizontal?: boolean }) {
         <>
           <span className="brand-symbol" aria-hidden="true">
             <Image
-              src="/images/providence-logo.png"
+              src="/images/providence-logo-maroon-gold.png"
               alt=""
               width={1254}
               height={1254}
@@ -24,7 +24,7 @@ export function Brand({ horizontal = false }: { horizontal?: boolean }) {
           </span>
           <span className="brand-wordmark" aria-hidden="true">
             <Image
-              src="/images/providence-logo.png"
+              src="/images/providence-logo-maroon-gold.png"
               alt=""
               width={1254}
               height={1254}
@@ -35,7 +35,7 @@ export function Brand({ horizontal = false }: { horizontal?: boolean }) {
         </>
       ) : (
         <Image
-          src="/images/providence-logo.png"
+          src="/images/providence-logo-maroon-gold.png"
           alt="Providence Mennonite Church"
           width={1254}
           height={1254}

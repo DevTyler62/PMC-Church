@@ -1,5 +1,22 @@
 # Project assets
 
+## Autumn color editions
+
+Active images edited on 2026-09-10 with the built-in OpenAI image-generation tool. Original scenes are retained as source files; the page imports the `-fall.png` versions. Layout, crops and animation hooks are unchanged.
+
+### illustrations/welcome-table-hero-fall.png
+
+Color-only edit of this exact photograph for autumn. Turn the existing green foliage into natural antique-gold, amber, copper and restrained deep burgundy fall foliage. Keep warm ivory sunbeams and warm charcoal shadows. Palette harmony #B08A45 #6E2639 #F5F1E8 #291D20. Preserve exact table, all chairs, pottery, plant, tree trunks, every object's position and shape, crop, perspective, light direction, exposure, photorealistic style and central empty space. No objects added or removed, no fallen leaves added, no scene redesign. Only colors change.
+
+### illustrations/quiet-garden-fall.png
+
+Color-only autumn recoloring of this exact textured illustration. Existing foliage becomes antique gold, muted copper/rust, tawny beige and subtle deep maroon; warm ivory sky/mountains and taupe landscape; water reflects warm muted autumn hues. Palette #B08A45 #6E2639 #F5F1E8 #EAE3D6 #291D20. Preserve the exact composition, tree and leaf silhouettes, bench, path, pond, hills, all textures and object positions. Keep the small bright pink flower on the right by the water exactly in place and pink. Do not add falling leaves or any objects. Do not change style, framing, forms or lighting. Colors only.
+
+### illustrations/deep-roots-fall.png
+
+Color-only recoloring of this exact cut-paper seedling illustration for autumn. Left leaf antique gold #B08A45, right leaf muted maroon #6E2639, warm brown stem, ivory/cream roots and background #F5F1E8 #EAE3D6, deep warm charcoal-maroon soil #291D20. Preserve precisely the two leaves, every root shape, stem, silhouette, position, texture, shadows and wide composition. No new elements, no wilting, no redesign. Only colors change.
+
+
 Landing-page illustrations and future supporting media live here. Interface icons use Phosphor; the approved logo remains in `public/images/`.
 
 ## Generated illustrations
@@ -32,3 +49,7 @@ Built-in image edit: move only the existing pink flower, stem, and leaves to the
 ## Daily devotional scripture
 
 `content/devotional-verses.json` contains 48 curated verses retrieved verbatim from bible-api.com in the public-domain World English Bible translation. Each entry records its reference and source URL. The devotional rotates deterministically every 48 days, using the church's America/New_York calendar date. No network service is needed to display a verse. The reflection prompt is site copy, not scripture.
+
+## Maroon and gold logo
+
+`public/images/providence-logo-maroon-gold.png` is the active header/footer logo, recolored with the built-in image-generation model from the approved `providence-logo.png`. Prompt: preserve the exact square composition, shapes, lettering and margins; change dark elements to deep maroon #6E2639 and green hills/subtitle/rules to antique gold #B08A45; retain the white background. The original is retained as the approved source.

@@ -30,6 +30,10 @@ Use Node.js 22.20+ and npm; commit `package-lock.json`. See `README.md` for the 
 
 Use TypeScript, two-space indentation, PascalCase components, and camelCase functions. Prefer Server Components and isolate interactive behavior in client components. Use semantic HTML, stable section IDs, and explicit button states. Preserve reduced-motion support and GSAP cleanup. ESLint uses Next.js core web vitals and TypeScript rules. Prettier uses single quotes and two-space indentation.
 
+## Color Palette
+
+Use deep maroon `#6E2639`, charcoal `#242321`, antique gold `#B08A45`, warm ivory `#F5F1E8`, soft cream `#EAE3D6`, and dark maroon `#291D20`. Text uses `#252321` and `#716C64`; borders use `#D5CCBE`. Keep logo colors consistent with the maroon/gold identity. See `DESIGN.md`.
+
 ## Icons
 
 Use [Phosphor Icons](https://phosphoricons.com/) through `@phosphor-icons/react` for all interface icons. Import from `@phosphor-icons/react/ssr` in Server Components. Prefer regular or light weights, set explicit sizes, and mark decorative icons `aria-hidden="true"`. Keep accessible labels on icon-only controls. Do not introduce another icon library or replace the approved church logo with an icon.

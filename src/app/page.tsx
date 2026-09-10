@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import DailyDevotional from '@/components/DailyDevotional';
 import { getDailyDevotional } from '@/lib/devotional';
-import welcomeHero from '../../assets/illustrations/welcome-table-hero.png';
-import quietGardenIllustration from '../../assets/illustrations/quiet-garden.png';
-import rootsIllustration from '../../assets/illustrations/deep-roots.png';
+import welcomeHero from '../../assets/illustrations/welcome-table-hero-fall.png';
+import quietGardenIllustration from '../../assets/illustrations/quiet-garden-fall.png';
+import rootsIllustration from '../../assets/illustrations/deep-roots-fall.png';
 import {
   ArrowDownIcon,
   ArrowUpRightIcon,
@@ -37,7 +37,7 @@ export default async function Home() {
         <section id="home" className="hero relative isolate">
           <Image
             src={welcomeHero}
-            alt="An open chair at a rustic table in a sunlit garden"
+            alt="An open chair at a rustic table in a sunlit autumn garden"
             fill
             priority
             sizes="100vw"
@@ -114,7 +114,7 @@ export default async function Home() {
           <div className="story-photo scroll-image">
             <Image
               src={quietGardenIllustration}
-              alt="An illustrated bench beneath a leafy tree beside a pond and winding path, with a small pink flower beside the water on the right"
+              alt="An illustrated bench beneath a tree with golden and maroon autumn leaves beside a pond and winding path, with a small pink flower beside the water on the right"
               fill
               sizes="(max-width: 768px) 100vw, 85vw"
               className="object-cover"

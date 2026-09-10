@@ -3,11 +3,11 @@
   --font-sans: 'Inter';
 }
 :root {
-  --ink: #111827;
-  --paper: #ced1c3;
-  --muted: #4b5563;
-  --line: #8c9680;
-  --gold: #b6cc9d;
+  --ink: #252321;
+  --paper: #f5f1e8;
+  --muted: #716c64;
+  --line: #d5ccbe;
+  --gold: #b08a45;
 }
 * {
   box-sizing: border-box;
@@ -47,8 +47,8 @@ button:disabled {
   opacity: 0.55;
 }
 ::selection {
-  background: #b6cc9d;
-  color: #111827;
+  background: #b08a45;
+  color: #252321;
 }
 h1,
 h2,
@@ -156,7 +156,7 @@ section[id] {
 }
 .desktop-nav a:hover,
 .footer a:hover {
-  color: #4b5563;
+  color: #716c64;
 }
 .nav-visit {
   display: flex;
@@ -177,7 +177,7 @@ section[id] {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #f3f5ed;
+  color: #f5f1e8;
   overflow: hidden;
 }
 .hero-image {
@@ -191,10 +191,10 @@ section[id] {
   background:
     radial-gradient(
       ellipse at 50% 42%,
-      rgba(25, 28, 33, 0.28),
-      rgba(25, 28, 33, 0.06) 75%
+      rgba(41, 29, 32, 0.28),
+      rgba(41, 29, 32, 0.06) 75%
     ),
-    linear-gradient(0deg, rgba(25, 28, 33, 0.38), rgba(25, 28, 33, 0.08) 70%);
+    linear-gradient(0deg, rgba(41, 29, 32, 0.38), rgba(41, 29, 32, 0.08) 70%);
 }
 .hero-content {
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
@@ -214,11 +214,11 @@ section[id] {
   margin: auto;
 }
 .hero h1 em {
-  color: #b6cc9d;
+  color: #b08a45;
 }
 .hero-description {
   font-size: 14px;
-  color: #e1e5d9;
+  color: #eae3d6;
   margin-top: 28px;
   line-height: 1.75;
 }
@@ -228,7 +228,7 @@ section[id] {
   font-size: clamp(17px, 1.7vw, 23px);
   font-weight: 600;
   line-height: 1.45;
-  color: #f3f5ed;
+  color: #f5f1e8;
   text-shadow: 0 2px 12px #00000080;
 }
 .hero-actions {
@@ -256,12 +256,12 @@ section[id] {
   transform: translateY(-3px);
 }
 .button-cream {
-  background: #b6cc9d;
+  background: #b08a45;
   color: var(--ink);
 }
 .button-glass {
-  background: #11182745;
-  border-color: #b6cc9d7a;
+  background: #25232145;
+  border-color: #b08a457a;
   color: white;
   backdrop-filter: blur(12px);
 }
@@ -320,7 +320,7 @@ section[id] {
 .story-copy {
   font-size: 14px;
   padding-top: 5px;
-  color: #4b5563;
+  color: #716c64;
 }
 .story-copy > p + p {
   margin-top: 18px;
@@ -363,7 +363,7 @@ section[id] {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  background: linear-gradient(transparent, #14271e8a);
+  background: linear-gradient(transparent, #291d208a);
   color: #fff;
 }
 .photo-caption > span:first-child {
@@ -412,7 +412,7 @@ section[id] {
   transition:
     background 0.4s,
     color 0.4s;
-  background: #bec5b0;
+  background: #eae3d6;
   min-height: 320px;
 }
 .value-panel + .value-panel {
@@ -458,7 +458,7 @@ section[id] {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   padding: 27px 0;
-  background: #bec5b0;
+  background: #eae3d6;
 }
 .marquee > div {
   display: flex;
@@ -473,12 +473,12 @@ section[id] {
   font-family: 'Gloock', Georgia, serif;
   font-style: italic;
   font-size: 32px;
-  color: #4b5563;
+  color: #716c64;
 }
 .marquee i {
   height: 7px;
   width: 7px;
-  background: #8c9680;
+  background: #d5ccbe;
   transform: rotate(45deg);
 }
 @keyframes marquee {
@@ -487,9 +487,9 @@ section[id] {
   }
 }
 .sermon-section {
-  background: #191c21;
+  background: #291d20;
   color: var(--paper);
-  background-image: radial-gradient(ellipse at 0 0, #a1b88718, transparent 60%);
+  background-image: radial-gradient(ellipse at 0 0, #b08a4518, transparent 60%);
 }
 .sermon-heading {
   display: flex;
@@ -503,7 +503,7 @@ section[id] {
 }
 .sermon-heading p {
   font-size: 13px;
-  color: #ced1c3;
+  color: #f5f1e8;
   margin-bottom: 23px;
 }
 .text-link {
@@ -515,12 +515,12 @@ section[id] {
   padding: 8px 0;
 }
 .muted {
-  color: #ced1c3;
+  color: #f5f1e8;
 }
 .sermon-player {
   aspect-ratio: 16/8;
   background: #000000;
-  border: 1px solid #8c968066;
+  border: 1px solid #d5ccbe66;
   border-radius: 32px;
   overflow: hidden;
 }
@@ -537,7 +537,7 @@ section[id] {
   justify-content: center;
   gap: 23px;
   text-align: center;
-  background: radial-gradient(ellipse at center, #a1b88722, transparent);
+  background: radial-gradient(ellipse at center, #b08a4522, transparent);
 }
 .sermon-placeholder h3 {
   font-size: 36px;
@@ -546,14 +546,14 @@ section[id] {
 }
 .sermon-placeholder p {
   font-size: 12px;
-  color: #ced1c3;
+  color: #f5f1e8;
 }
 .sermon-caption {
   display: flex;
   justify-content: space-between;
   margin-top: 19px;
   font-size: 10px;
-  color: #ced1c3;
+  color: #f5f1e8;
 }
 .sermon-caption > span {
   display: flex;
@@ -563,14 +563,14 @@ section[id] {
 .live-dot {
   width: 5px;
   height: 5px;
-  background: #b6cc9d;
+  background: #b08a45;
   border-radius: 50%;
 }
 .visit-section {
   display: grid;
   grid-template-columns: 1.25fr 1fr;
   gap: 10%;
-  background: #bfc7b2;
+  background: #eae3d6;
 }
 .visit-section h2 {
   margin: 27px 0;
@@ -585,7 +585,7 @@ section[id] {
   display: flex;
   gap: 24px;
   padding: 27px 0;
-  border-bottom: 1px solid #8c9680;
+  border-bottom: 1px solid #d5ccbe;
 }
 .visit-details > div:first-child {
   padding-top: 0;
@@ -645,7 +645,7 @@ textarea {
   display: block;
   width: 100%;
   border: 0;
-  border-bottom: 1px solid #8c9680;
+  border-bottom: 1px solid #d5ccbe;
   background: transparent;
   border-radius: 0;
   padding: 13px 0;
@@ -655,7 +655,7 @@ textarea {
 }
 input::placeholder,
 textarea::placeholder {
-  color: #4b5563;
+  color: #716c64;
 }
 textarea {
   margin-top: 8px;
@@ -667,7 +667,7 @@ textarea {
   font-size: 10px;
   line-height: 1.7;
   margin: 25px 0;
-  color: #4b5563;
+  color: #716c64;
 }
 .consent input {
   margin-top: 3px;
@@ -675,11 +675,11 @@ textarea {
 }
 .form-note {
   font-size: 11px;
-  color: #4b5563;
+  color: #716c64;
   margin-top: 15px;
 }
 .error-message {
-  color: #a02d26;
+  color: #6e2639;
   font-size: 12px;
   margin-top: 15px;
 }
@@ -693,7 +693,8 @@ textarea {
 .closing {
   padding: 76px 6%;
   text-align: center;
-  background: #b6cc9d;
+  background: var(--primary);
+  color: var(--paper);
 }
 .closing > a {
   display: flex;
@@ -1076,10 +1077,11 @@ textarea {
 
 /* DESIGN.md visual tokens; existing geometry and motion remain in place. */
 :root {
-  --primary: #b6cc9d;
-  --accent: #a1b887;
-  --surface: #191c21;
-  --secondary: #000000;
+  --primary: #6e2639;
+  --accent: #b08a45;
+  --surface: #eae3d6;
+  --dark-surface: #291d20;
+  --secondary: #242321;
 }
 h1,
 h2,
@@ -1099,32 +1101,33 @@ h2,
 .button-cream,
 .button-dark {
   background: var(--primary);
-  color: var(--ink);
+  color: var(--paper);
   border-color: var(--line);
 }
 .button-cream:hover,
 .button-dark:hover {
   background: var(--accent);
+  color: var(--ink);
 }
 .button-glass {
-  background: #191c2170;
-  color: #f3f5ed;
+  background: #291d2070;
+  color: #f5f1e8;
   border-color: var(--line);
 }
 .value-panel {
   background: var(--surface);
-  color: #e1e5d9;
+  color: var(--ink);
 }
 .value-panel.active {
   background: var(--primary);
-  color: var(--ink);
+  color: var(--paper);
 }
 .values-grid,
 .sermon-player {
   box-shadow: 0 8px 24px #0000000d;
 }
 .sermon-section .text-link {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .hero h1,
@@ -1254,3 +1257,19 @@ h2,
 }
 
 .hero-actions { text-shadow: none; }
+
+/* Maroon and antique-gold identity accents. */
+.desktop-nav a:hover,
+.footer a:hover,
+.nav-visit,
+.devotional > svg,
+.visit-details > div > svg,
+.contact-links svg {
+  color: var(--primary);
+}
+.value-panel button > svg:not(.value-arrow) { color: var(--primary); }
+.value-panel.active button > svg:not(.value-arrow) { color: var(--accent); }
+.marquee i { background: var(--accent); }
+.consent input { accent-color: var(--primary); }
+:focus-visible { outline-color: var(--primary); }
+.hero :focus-visible, .sermon-section :focus-visible, .closing :focus-visible { outline-color: var(--accent); }

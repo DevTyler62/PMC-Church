@@ -3,14 +3,15 @@ version: "neuform-staff-featured-2026-05-22"
 name: "Eco-Tech Dashboard"
 description: "Eco Tech Dashboard Section is designed for demonstrating application workflows and interface hierarchy. Key features include clear information density, modular panels, and interface rhythm. It is suitable for product showcases, admin panels, and analytics experiences."
 colors:
-  primary: "#B6CC9D"
-  secondary: "#000000"
-  accent: "#A1B887"
-  background: "#CED1C3"
-  surface: "#191C21"
-  text-primary: "#111827"
-  text-secondary: "#4B5563"
-  border: "#8C9680"
+  primary: "#6E2639"
+  secondary: "#242321"
+  accent: "#B08A45"
+  background: "#F5F1E8"
+  surface: "#EAE3D6"
+  dark-surface: "#291D20"
+  text-primary: "#252321"
+  text-secondary: "#716C64"
+  border: "#D5CCBE"
 typography:
   display-lg:
     fontFamily: "Gloock"
@@ -56,7 +57,7 @@ Eco-Tech Workshops Schedule 18k+ Global participants 88% Success rate Instructor
 Use the attached HTML reference as the source of truth. Preserve the visible hierarchy, first-screen composition, section rhythm, density, and interaction tone before adapting copy or content.
 Key visible headings include: Eco-Tech Workshops Schedule; Cultivate knowledge organically.; Weekly Engagement.
 ## Colors
-Anchor the palette in primary #B6CC9D, secondary #000000, accent #A1B887, background #CED1C3, surface #191C21, text-primary #111827. Keep background, surface, text, and border roles distinct so generated layouts retain the same contrast pattern as the source.
+Anchor the palette in primary #6E2639, secondary #242321, accent #B08A45, background #F5F1E8, surface #EAE3D6, dark-surface #291D20, text-primary #252321. Keep background, surface, text, and border roles distinct so generated layouts retain the same contrast pattern as the source.
 ## Typography
 Use Gloock for display moments and Inter for body copy unless the HTML clearly demands a compatible fallback. Labels and technical metadata should use DM Sans or an equivalent sans-serif face.
 ## Layout
