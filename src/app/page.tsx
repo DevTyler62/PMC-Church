@@ -327,7 +327,11 @@ export default async function Home() {
               </div>
             </div>
           </div>
-          <PrayerForm accessKey={process.env.WEB3FORMS_ACCESS_KEY || ''} />
+          <PrayerForm
+            publicKey={process.env.EMAILJS_PUBLIC_KEY || ''}
+            serviceId={process.env.EMAILJS_SERVICE_ID || ''}
+            templateId={process.env.EMAILJS_TEMPLATE_ID || ''}
+          />
         </section>
         <DailyDevotional initial={getDailyDevotional()} />
         <section className="closing">

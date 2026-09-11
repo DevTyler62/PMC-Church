@@ -62,19 +62,14 @@ test('prayer form shows failures without clearing input and resets after success
 }) => {
   await page.goto('/');
   let succeeds = false;
-  await page.route('https://api.web3forms.com/submit', (route) =>
-    route.fulfill({
-      status: succeeds ? 200 : 502,
-      contentType: 'application/json',
-      body: JSON.stringify(
-        succeeds
-          ? { success: true }
-          : {
-              message:
-                'We could not send your request. Please try again later.',
-            },
-      ),
-    }),
+  await page.route(
+    'https://api.emailjs.com/api/v1.0/email/send-form',
+    (route) =>
+      route.fulfill({
+        status: succeeds ? 200 : 502,
+        contentType: 'text/plain',
+        body: succeeds ? 'OK' : 'The email service is temporarily unavailable.',
+      }),
   );
   await page
     .getByLabel('Email address', { exact: true })

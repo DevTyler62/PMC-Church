@@ -53,3 +53,11 @@ Built-in image edit: move only the existing pink flower, stem, and leaves to the
 ## Maroon and gold logo
 
 `public/images/providence-logo-maroon-gold.png` is the active header/footer logo, recolored with the built-in image-generation model from the approved `providence-logo.png`. Prompt: preserve the exact square composition, shapes, lettering and margins; change dark elements to deep maroon #6E2639 and green hills/subtitle/rules to antique gold #B08A45; retain the white background. The original is retained as the approved source.
+
+## Favicon and platform icons
+
+`branding/favicon-master.png` was generated with the built-in image model from the approved maroon/gold church logo. Prompt: extract only the circular cross, hills and winding path; preserve the emblem, omit lettering, use maroon and gold on ivory, and center with generous app-icon safety margins. PNG exports were resized with Sharp; the ICO packages 16, 32 and 48 pixel versions.
+
+Next.js serves `src/app/favicon.ico`, `src/app/icon.png` (32px), and `src/app/apple-icon.png` (180px). `public/icons/` contains 192px and 512px browser/Android icons plus a maskable 512px version, registered by `src/app/manifest.ts`. These brand assets are separate from Phosphor interface icons.
+
+Browser favicon exports now use `branding/favicon-rounded.png`, edited with the built-in image model to round only the ivory background corners (22% radius) with transparent outer corners. The symbol is preserved. Apple touch and maskable icons retain opaque backgrounds because their platforms apply their own corner masks.

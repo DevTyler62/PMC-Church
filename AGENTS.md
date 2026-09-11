@@ -48,7 +48,7 @@ No historical commit convention exists. Use concise imperative messages such as 
 
 ## Content & Configuration
 
-Family, Community, and Faith use user-supplied placeholder copy. Do not invent history, service times, addresses, or contact details. The verified YouTube channel is configured in `src/lib/church.ts`. Web3Forms uses a public form access key supplied through `.env.local` to the browser; never log prayer contents or expose private service credentials. Keep the form unavailable until delivery is configured. Keep draft pages excluded from indexing until launch approval.
+Family, Community, and Faith use user-supplied placeholder copy. Do not invent history, service times, addresses, or contact details. The verified YouTube channel is configured in `src/lib/church.ts`. EmailJS uses a public key, service ID, and template ID supplied through `.env.local` to the browser; never log prayer contents or expose private service credentials. Keep the form unavailable until delivery is configured. Keep draft pages excluded from indexing until launch approval.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

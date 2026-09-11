@@ -1,9 +1,18 @@
 'use client';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { validatePrayer } from '@/lib/prayer';
 import { ArrowUpRightIcon, CheckIcon } from '@phosphor-icons/react';
-export default function PrayerForm({ accessKey }: { accessKey: string }) {
-  const enabled = Boolean(accessKey);
+export default function PrayerForm({
+  publicKey,
+  serviceId,
+  templateId,
+}: {
+  publicKey: string;
+  serviceId: string;
+  templateId: string;
+}) {
+  const enabled = Boolean(publicKey && serviceId && templateId);
   const [status, setStatus] = useState<
     'idle' | 'sending' | 'success' | 'error'
   >('idle');
@@ -20,28 +29,8 @@ export default function PrayerForm({ accessKey }: { accessKey: string }) {
         throw new Error(
           'Please provide a valid email, a prayer request of 10–5,000 characters, and consent.',
         );
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify({
-          access_key: accessKey,
-          name: validated.name || 'Name not provided',
-          email: validated.email,
-          message: validated.prayer,
-          subject: 'Providence Mennonite Church — Prayer request',
-          from_name: 'Providence Church Website',
-          botcheck: false,
-        }),
-        signal: AbortSignal.timeout(20000),
-      });
-      const data = await res.json();
-      if (!res.ok || data.success !== true)
-        throw new Error(
-          data.message || 'Your request could not be sent. Please try again.',
-        );
+      if (!enabled) throw new Error('Prayer requests are not configured yet.');
+      await emailjs.sendForm(serviceId, templateId, form, { publicKey });
       setStatus('success');
       setMessage(
         'Your prayer request has been sent. Thank you for reaching out.',
@@ -52,12 +41,12 @@ export default function PrayerForm({ accessKey }: { accessKey: string }) {
       setMessage(
         error instanceof Error
           ? error.message
-          : 'Unable to send. Please try again.',
+          : 'We could not send your request. Please try again later.',
       );
     }
   }
   return (
-    <form onSubmit={submit} className="prayer-form">
+    <form id="prayer-form" onSubmit={submit} className="prayer-form">
       <div className="form-row">
         <label>
           Your name <span>(optional)</span>
