@@ -444,15 +444,6 @@ section[id] {
   margin-top: 20px;
   opacity: 0.85;
 }
-.value-arrow {
-  position: absolute;
-  right: 0;
-  top: 3px;
-  transition: transform 0.4s;
-}
-.value-panel:hover .value-arrow {
-  transform: translate(3px, -3px);
-}
 .marquee {
   overflow: hidden;
   border-top: 1px solid var(--line);
@@ -953,9 +944,6 @@ textarea {
   .value-panel button > span {
     font-size: 25px;
   }
-  .value-arrow {
-    top: 8px;
-  }
   .value-panel p {
     margin-top: 20px;
     font-size: 13px;
@@ -1267,8 +1255,8 @@ h2,
 .contact-links svg {
   color: var(--primary);
 }
-.value-panel button > svg:not(.value-arrow) { color: var(--primary); }
-.value-panel.active button > svg:not(.value-arrow) { color: var(--accent); }
+.value-panel button > svg { color: var(--primary); }
+.value-panel.active button > svg { color: var(--accent); }
 .marquee i { background: var(--accent); }
 .consent input { accent-color: var(--primary); }
 :focus-visible { outline-color: var(--primary); }

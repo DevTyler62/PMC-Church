@@ -4,7 +4,6 @@ import {
   BookOpenIcon,
   UsersIcon,
   HouseIcon,
-  ArrowUpRightIcon,
 } from '@phosphor-icons/react';
 const items = [
   { title: 'Faith', icon: BookOpenIcon },
@@ -28,11 +27,6 @@ export default function Values() {
           >
             <item.icon aria-hidden="true" size={34} weight="light" />
             <span>{item.title}</span>
-            <ArrowUpRightIcon
-              aria-hidden="true"
-              className="value-arrow"
-              size={22}
-            />
           </button>
           <p>
             We may only be a small church but we are always willing to be there
