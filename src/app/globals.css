@@ -698,9 +698,10 @@ textarea {
   margin-top: 20px;
 }
 .closing > a > svg {
-  width: 70px;
-  height: 70px;
-  margin-left: 15px;
+  width: min(0.8em, 70px);
+  height: min(0.8em, 70px);
+  flex-shrink: 0;
+  margin-left: clamp(0px, calc((100vw - 640px) * 0.02), 15px);
   transition: transform 0.3s;
 }
 .closing > a:hover > svg {
@@ -928,26 +929,6 @@ textarea {
   .values-heading h2 {
     margin-top: 18px;
   }
-  .value-panel {
-    min-height: 0;
-    padding: 28px;
-  }
-  .value-panel + .value-panel {
-    border-left: 0;
-    border-top: 1px solid var(--line);
-  }
-  .value-panel button {
-    flex-direction: row;
-    gap: 22px;
-    align-items: center;
-  }
-  .value-panel button > span {
-    font-size: 25px;
-  }
-  .value-panel p {
-    margin-top: 20px;
-    font-size: 13px;
-  }
   .marquee {
     padding: 20px 0;
   }
@@ -1017,8 +998,6 @@ textarea {
     flex-wrap: wrap;
   }
   .closing > a > svg {
-    height: 32px;
-    width: 32px;
     margin-left: 0;
   }
   .footer {
@@ -1261,3 +1240,36 @@ h2,
 .consent input { accent-color: var(--primary); }
 :focus-visible { outline-color: var(--primary); }
 .hero :focus-visible, .sermon-section :focus-visible, .closing :focus-visible { outline-color: var(--accent); }
+
+/* Match stacked card styling to the grid’s md breakpoint. */
+@media (max-width: 767px) {
+  .value-panel {
+    min-height: 0;
+    padding: 28px;
+  }
+  .value-panel + .value-panel {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+  .value-panel button {
+    flex-direction: row;
+    gap: 22px;
+    align-items: center;
+  }
+  .value-panel button > span {
+    font-size: 25px;
+  }
+  .value-panel p {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+}
+
+/* Keep the panel mounted so opening and closing can both flow smoothly. */
+.mobile-nav {
+  visibility: hidden;
+  clip-path: inset(0% 0% 100% 0%);
+  overflow: hidden;
+}
+.mobile-nav a { opacity: 0; transform: translateY(-12px); }
+@media (min-width: 1024px) { .mobile-nav { display: none; } }
